@@ -1,11 +1,14 @@
 import React from "react";
 
 import "./style.scss";
+import {MainLayout} from "../../components/layout";
 
 function Board() {
 
     return (
-        <div>Board</div>
+        <MainLayout>
+            <div>Board</div>
+        </MainLayout>
     );
 }
 
