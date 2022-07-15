@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__body {
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .creator {
+    display: flex;
+    flex-direction: row;
+    background: seagreen;
+    width: 345px;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 900;
+
+    &__plus {
+      font-size: 50px;
+      color: white;
+      padding-right: 70px;
+      padding-left: 20px;
+    }
+
+    &__new {
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+
+.creatorColumn {
+  display: flex;
+  flex-direction: column;
+}
