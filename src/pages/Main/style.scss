@@ -38,3 +38,47 @@
   display: flex;
   flex-direction: column;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.title {
+  padding-top: 20px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.name {
+  height: 30px;
+}
+
+.buttons-row {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.cancel {
+  cursor: pointer;
+  border: none;
+  height: 30px;
+  width: 110px;
+
+}
+
+.save {
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  width: 110px;
+  background: seagreen;
+  color: white;
+}
