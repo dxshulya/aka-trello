@@ -1,5 +1,5 @@
 import {CONSTANTS} from "./index";
-import { v4 as uuidv4 } from 'uuid';
+import {v4 as uuidv4} from 'uuid';
 
 export const addList = title => {
     return (dispatch, getState) => {
@@ -8,31 +8,6 @@ export const addList = title => {
         dispatch({
             type: CONSTANTS.ADD_LIST,
             payload: {title, boardID, id}
-        });
-    };
-};
-
-export const sort = (
-    droppableIdStart,
-    droppableIdEnd,
-    droppableIndexStart,
-    droppableIndexEnd,
-    draggableId,
-    type
-) => {
-    return (dispatch, getState) => {
-        const boardID = getState().activeBoard;
-        dispatch({
-            type: CONSTANTS.DRAG_HAPPENED,
-            payload: {
-                droppableIdStart,
-                droppableIdEnd,
-                droppableIndexEnd,
-                droppableIndexStart,
-                draggableId,
-                type,
-                boardID
-            }
         });
     };
 };

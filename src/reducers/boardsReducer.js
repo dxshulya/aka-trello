@@ -4,7 +4,7 @@ const initialState = {
     "board-0": {
         id: "board-0",
         lists: ["list-0"],
-        title: 'My board'
+        title: 'Для примера'
     }
 };
 
@@ -18,26 +18,6 @@ const boardsReducer = (state = initialState, action) => {
             return {...state, [boardID]: board};
         }
 
-        case CONSTANTS.DRAG_HAPPENED: {
-            const {boardID} = action.payload;
-            const board = state[boardID];
-            const lists = board.lists;
-            const {
-                droppableIndexEnd,
-                droppableIndexStart,
-
-                type
-            } = action.payload;
-
-            if (type === "list") {
-                const pulledOutList = lists.splice(droppableIndexStart, 1);
-                lists.splice(droppableIndexEnd, 0, ...pulledOutList);
-                board.lists = lists;
-
-                return {...state, [boardID]: board};
-            }
-            return state;
-        }
         case CONSTANTS.DELETE_LIST: {
             const {listID, boardID} = action.payload;
             const board = state[boardID];
