@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import "./style.scss";
 import {connect} from "react-redux";
 import {deleteList, editTitle} from "../../../actions";
-import TrelloCard from "../TrelloCard";
-import FormNew from "../FormNew";
+import {FormNew, TrelloCard} from "../index";
 
 const TrelloList = ({title, cards, listID, dispatch}) => {
     const [isEditing, setIsEditing] = useState(false);

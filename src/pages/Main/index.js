@@ -5,9 +5,9 @@ import {MainLayout} from "../../components/layout";
 import {connect} from "react-redux";
 import {addBoard} from "../../actions";
 import {Link} from "react-router-dom";
-import {BoardThumb} from "../../components/common";
+import {BoardThumb} from "../../components/ui";
 
-function Main({boards, boardOrder, dispatch}) {
+const Main = ({boards, boardOrder, dispatch}) => {
 
     const [isOpen, setIsOpen] = useState(false);
 

@@ -3,9 +3,7 @@ import "./style.scss";
 import {connect} from "react-redux";
 import {useParams} from "react-router-dom";
 import {setActiveBoard} from "../../actions";
-import {TrelloList} from "../../components/common";
-import {FormNew} from "../../components/common";
-
+import {FormNew, TrelloList} from "../../components/ui";
 
 const Board = (props) => {
 

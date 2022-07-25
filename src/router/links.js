@@ -1,2 +1,2 @@
 export const MAIN_LINK = "/";
-export const BOARD_LINK = "/:board_id";
+export const BOARD_LINK = "/:boardID"
